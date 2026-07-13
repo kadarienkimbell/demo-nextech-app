@@ -36,7 +36,7 @@ const app = Vue.createApp({
       error: '',
     });
 
-    fetch('items-template.csv')
+    fetch('./items.csv')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Could not load CSV data file.');
@@ -52,14 +52,18 @@ const app = Vue.createApp({
               itemsStore.error = 'There was a problem reading the CSV data.';
               itemsStore.items = [];
             } else {
-              itemsStore.items = data.map((row) => ({
-                id: String(row.id || '').trim(),
-                name: String(row.name || '').trim(),
-                description: String(row.description || '').trim(),
-                category: String(row.category || '').trim(),
-                imageUrl: String(row.image_url || '').trim(),
-                location: String(row.location || '').trim(),
-              }));
+              itemsStore.items = data.map((row) => {
+                const imageUrl = String(row.image_url || '').trim();
+
+                return {
+                  id: String(row.id || '').trim(),
+                  name: String(row.name || '').trim(),
+                  description: String(row.description || '').trim(),
+                  category: String(row.category || '').trim(),
+                  imageUrl: imageUrl ? encodeURI(imageUrl) : '',
+                  location: String(row.location || '').trim(),
+                };
+              });
               itemsStore.error = '';
             }
             itemsStore.isLoading = false;
