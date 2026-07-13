@@ -1,13 +1,15 @@
-# Specification: [Your App Idea Name]
+# Specification: Ka'Darien game promotion service
 
-App description: [Write a one or two sentences describing what your app does and who it’s for.]
+App description: Ka'Darien is a simple promotional showcase for indie video games, helping players and streamers discover featured titles and learn the easiest way to view their details.
 
 ## Style and Theme
 
-[Describe the look and feel of your app.] 
+The app should feel bold and energetic with a gaming-inspired dark background and bright accent colors. Use clear cards, modern typography, and fun-but-clean button styles.
 
 Overall mood:
-Examples: fun and playful, calm and professional, bold and energetic, etc.
+- Bold and energetic
+- Friendly and modern
+- Game promotion showcase
 
 Use the *style-guide.html* for details on styling -- fonts, colors, and layout.
 
@@ -15,7 +17,7 @@ Use the *style-guide.html* for details on styling -- fonts, colors, and layout.
 
 ### Story 1 (most important)
 
-[Write 1-2 sentences. Who is using the app, what do they want to do, and what do they see when it works? Write it like you are describing it to a friend.]
+A gamer or streamer lands on the home page and wants to explore new featured games. They click the collection button, browse game cards with short descriptions, and open one game detail page to read more.
 
 ---
 
