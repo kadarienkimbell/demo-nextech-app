@@ -2,7 +2,7 @@ export default {
   name: 'landing-page-component',
   setup() {
     const itemsStore = Vue.inject('itemsStore');
-
+    // Completed
     const featuredItems = Vue.computed(() => {
       return (itemsStore.items || []).filter((item) => item.imageUrl).slice(0, 6);
     });
