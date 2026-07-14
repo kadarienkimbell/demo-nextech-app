@@ -10,10 +10,14 @@ export default {
           <p class="text-center text-muted small mt-3 mb-0">Ka'Darien Kimbell</p>
         </div>
         <div class="col-lg-8">
-          <h1 class="mb-3">About this app</h1>
+          <h1 class="mb-3">About Me</h1>
           <p>
             My name is Ka'Darien, and I am someone who enjoys both sports and gaming. Basketball has always been a big part of my life, and video games have become another passion of mine because they offer excitement, creativity, and connection with others.
           </p>
+          <p>
+            More about me: I attend Anderson High School and I am going into the 10th grade.
+          </p>
+          <h2 class="h5 mt-3">Why I Created This Website</h2>
           <p>
             I built this app because I wanted to create a space where people can easily discover games they may enjoy. I know that jumping into the world of gaming can feel overwhelming, especially when there are so many choices, so I wanted to make the experience feel simple, welcoming, and easy to explore.
           </p>
